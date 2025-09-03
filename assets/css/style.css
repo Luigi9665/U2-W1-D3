@@ -204,4 +204,57 @@ article {
   .product-card {
     margin-block: 0.4rem;
   }
+
+  /* TITLE */
+  h1 {
+    letter-spacing: -3px;
+    font-size: 3.2rem;
+  }
+
+  /* GESTIONE DELLO SCROLL CON NAV CHE DIVENTA SIDEBAR */
+  .boxHeader {
+    position: fixed;
+  }
+
+  .boxMain {
+    margin-left: 239px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+/* MEDIA SCREEN PER MEDIUM LARGE */
+
+@media screen and (min-width: 992px) {
+  .n4 {
+    display: block;
+  }
+  .card {
+    max-width: calc((100% - 20px) / 4);
+  }
+}
+
+/* MEDIA SCREEN LARGE */
+
+@media screen and (min-width: 1200px) {
+  .n5 {
+    display: block;
+  }
+  .card {
+    max-width: calc((100% - 20px) / 5);
+  }
+
+  .container-article {
+    min-height: 60vh;
+    display: flex;
+    gap: 1rem;
+  }
+  .container-article > div,
+  .container-article > img {
+    flex: 1;
+    object-fit: cover;
+  }
+  .container-article img {
+    order: -1;
+  }
 }
