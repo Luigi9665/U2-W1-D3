@@ -15,28 +15,36 @@ body {
 }
 
 /* NAV */
+header {
+  width: 100%;
+  overflow: hidden;
+}
 
 /* BUTTON NAV */
 .container-btnNav {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
 }
 
-.container-btnNav button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 767px) {
+  .container-btnNav button {
+    flex: 1;
+  }
+  .btn-Shop {
+    padding-inline: 20px;
+    flex: 2;
+  }
 }
-
 button {
   background-color: #ffdf7f;
   color: inherit;
-  padding: 0.5rem 2rem;
+  /* padding: 0.5rem 2rem; */
   border: none;
   border-radius: 3rem;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 700;
   height: 3rem;
   margin-block: 1rem;
@@ -44,6 +52,9 @@ button {
 
 /* BUTTON SHOP */
 .btn-Shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 6rem;
   font-size: 1.7rem;
 }
@@ -118,7 +129,7 @@ h4 {
 }
 .product-btn button {
   font-size: 1.1rem;
-  width: 18rem;
+  width: 80%;
 }
 @media screen and (min-width: 576px) {
   .n5 {
@@ -170,6 +181,7 @@ article {
   }
 
   .container-btnNav button {
+    font-size: 1.1rem;
     margin: 0;
     height: 6rem;
     width: 100%;
